@@ -143,11 +143,11 @@ module H_driver(
 		begin
 			case(sel2)
 				0 : r_out1 <= in1; 
-                1 : r_out1 <= 0;
-            endcase
-            case(sel2)
+               			1 : r_out1 <= 0;
+            		endcase
+           		case(sel2)
 				0 : r_out2 <= 0;
-				1 :	r_out2 <= in2;
+				1 : r_out2 <= in2;
 			endcase
 		end
 	assign out1 = r_out1;
